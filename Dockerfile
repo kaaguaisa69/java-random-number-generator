@@ -10,5 +10,8 @@ COPY RandomNumberGenerator.java .
 # Compile the Java program
 RUN javac RandomNumberGenerator.java
 
+# Expose port 8080 to the host
+EXPOSE 8080
+
 # Define the command to run the application
 CMD ["java", "RandomNumberGenerator"]
